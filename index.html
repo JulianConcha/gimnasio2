@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/wow.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/2ee0245f3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $('.events').append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $('.events').append("<li>after event fired.</li>");
+          }
+        });
+      });
+    </script>
+
+    <script src="fancybox/jquery.fancybox.js"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+  </head>
+  <body>
+
+    <i class="arriba fa-solid fa-circle-up"></i>
+    <header>
+      <div class="contenido ancho">
+        <div class="contenido_header">
+          <figure>
+            <img src="img/logo.png" alt="logo principal" />
+          </figure>
+
+          <li id="icono" class="barras">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+        </div>
+
+        <nav id="caja">
+          <a href="#">Inicio</a>
+          <a href="#">Nuestros Servicios</a>
+          <a href="#">Instructores</a>
+          <a href="#">Contactanos</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="img/slide1.jpg" alt="">
+          <p class="caption">El mejor FITNESS <br> en Mérida</p>
+        </li>
+        <li>
+          <img src="img/slide2.jpg" alt="">
+          <p class="caption">El mejor FITNESS <br> en Mérida</p>
+        </li>
+        <li>
+          <img src="img/slide3.jpg" alt="">
+          <p class="caption">El mejor FITNESS <br> en Mérida</p>
+        </li>
+      </ul>
+    </div>
+
+    <section class="informacion">
+      <h2 class="texto_naranja">Nuestros Servicios</h2>
+      <hr />
+      <div class="contenido_article ancho">
+        <article class="wow animate__animated animate__backInUp">
+          <i class="fas fa-award"></i>
+          <br />
+          <h2>QUALITY SERVICE</h2>
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sit
+          sapiente cum, accusantium consequatur blanditiis error voluptatum
+          officiis, voluptates omnis aspernatur dolores dignissimos expedita
+          placeat, illo mollitia odio excepturi recusandae.
+        </article>
+
+        <article class="wow animate__animated animate__backInUp">
+          <i class="fas fa-dumbbell"></i>
+          <br />
+          <h2>SPACOIUS GYM</h2>
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sit
+          sapiente cum, accusantium consequatur blanditiis error voluptatum
+          officiis, voluptates omnis aspernatur dolores dignissimos expedita
+          placeat, illo mollitia odio excepturi recusandae.
+        </article>
+
+        <article class="wow animate__animated animate__backInUp">
+          <i class="fas fa-file-invoice"></i>
+          <br />
+          <h2>UNIQUE FITNESS PROGRAMS</h2>
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sit
+          sapiente cum, accusantium consequatur blanditiis error voluptatum
+          officiis, voluptates omnis aspernatur dolores dignissimos expedita
+          placeat, illo mollitia odio excepturi recusandae.
+        </article>
+
+        <article class="wow animate__animated animate__backInUp">
+          <i class="fas fa-users"></i>
+          <br />
+          <h2>GROUP CLASSES</h2>
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sit
+          sapiente cum, accusantium consequatur blanditiis error voluptatum
+          officiis, voluptates omnis aspernatur dolores dignissimos expedita
+          placeat, illo mollitia odio excepturi recusandae.
+        </article>
+      </div>
+    </section>
+
+    <section class="fancy_fotos">
+      <h2 class="texto_naranja">Instructores</h2>
+      <hr />
+      <div id="galeria" class="ancho contenedorfotos">
+        <a
+          href="img/foto1.jpg"
+          class="fancybox"
+          title="GIMNASIO 1"
+          rel="gallery1"
+        >
+          <img src="img/foto1.jpg" alt="" />
+        </a>
+
+        <a
+          href="img/foto2.jpg"
+          class="fancybox"
+          title="GIMNASIO 2"
+          rel="gallery1"
+        >
+          <img src="img/foto2.jpg" alt="" />
+        </a>
+
+        <a
+          href="img/foto3.jpg"
+          class="fancybox"
+          title="GIMNASIO 3"
+          rel="gallery1"
+        >
+          <img src="img/foto3.jpg" alt="" />
+        </a>
+
+        <a
+          href="img/foto4.jpg"
+          class="fancybox"
+          title="GIMNASIO 4"
+          rel="gallery1"
+        >
+          <img src="img/foto4.jpg" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <section class="parrallas">
+      <div class="info2">
+      <h3>FITNESS <BR> <span class="texto_naranja">CLUB</span> </BR></h3>
+      <a href="">Suscribete ahora</a>
+  </div>
+  </section>
+
+  <footer>
+    <div class="iconos ancho">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+
+    </div>
+  </footer>
+
+    <script>
+      $("#icono").click(function () {
+        $("#caja").slideToggle();
+      });
+    </script>
+
+    <script>
+      new WOW().init();
+    </script>
+
+    <script>
+      $(document).ready(function(){
+  $('.arriba').click(function(){
+      $('body, html').animate({
+          scrollTop: '0px'
+      }, 1000);
+  });
+});
+    </script>
+  </body>
+</html>
